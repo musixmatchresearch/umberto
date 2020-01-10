@@ -28,7 +28,7 @@ Both models have 12-layer, 768-hidden, 12-heads, 110M parameters (BASE).
 | `umberto-wikipedia-uncased-v1` | YES  | NO | SPM | 32K | 100k | [Link](http://bit.ly/2s7JmXh)| [Link](http://bit.ly/35wbSj6) |
 | `umberto-commoncrawl-cased-v1` | YES | YES | SPM | 32K | 125k | [Link](http://bit.ly/2TakHfJ)| [Link](http://bit.ly/35zO7GH) |
 
-We trained both the models on 8 Nvidia V100 GPUs during 4 days on AWS Sagemaker.
+We trained both the models on 8 Nvidia V100 GPUs (p2.8xlarge P2 EC2 instance) during 4 days on [AWS Sagemaker](https://aws.amazon.com/it/sagemaker/).
 
 # Installation
 
@@ -169,13 +169,13 @@ All of the original datasets are publicly available or were released with the ow
 * EvalITA [Page](http://www.evalita.it/)
 * WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
 
-### Authors
+## Authors
 
 **Loreto Parisi**: `loreto at musixmatch dot com`, [loretoparisi](https://github.com/loretoparisi)<br>
 **Simone Francia**: `simone.francia at musixmatch dot com`, [simonefrancia](https://github.com/simonefrancia)<br>
 **Paolo Magnani**: `paul.magnani95 at gmail dot com`, [paulthemagno](https://github.com/paulthemagno)<br>
 
-### About Musixmatch AI
+## About Musixmatch AI
 We do Machine Learning and Artificial Intelligence @[musixmatch](https://twitter.com/Musixmatch)<br>
 Follow us on [Twitter](https://twitter.com/musixmatchai) [Github](https://github.com/musixmatchresearch)
 
