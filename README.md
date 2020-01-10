@@ -63,7 +63,7 @@ pip install .
 
 # Examples
 
-UmbertoModel, UmbertoTokenizer classes are supported only if you install transformers from source from musixmatch-research   https://github.com/musixmatchresearch/transformers. Soon it will be merged
+`UmbertoModel`, `UmbertoTokenizer` classes are supported only if you install transformers from source from musixmatch-research   https://github.com/musixmatchresearch/transformers. Soon it will be merged
 
 #### Transformers
 ```python
@@ -84,7 +84,7 @@ last_hidden_states = outputs[0]  # The last hidden-state is the first element of
 ```
 
 #### Fairseq
-UmbertoModel class is supported only if you install fairseq from source from musixmatch-research https://github.com/musixmatchresearch/fairseq. Soon it will be merged
+`UmbertoModel` class is supported only if you install fairseq from source from musixmatch-research https://github.com/musixmatchresearch/fairseq. Soon it will be merged
 ```python
 import torch
 
@@ -112,7 +112,6 @@ result = umberto.fill_mask(masked_line, topk=20)
 ### Results
 We obtained state-of-the-art results for POS tagging, confirming that cased models trained with WWM perform better than uncased ones.
 Our model `Umberto-Wikipedia-Uncased` trained with WWM on a smaller dataset and uncased, produces important results comparable to the cased results.
-For Ner ...
 
 ### Umberto-Wikipedia-Uncased
 These results refers to umberto-commoncrawl-cased model.
@@ -170,8 +169,15 @@ All of the original datasets are publicly available or were released with the ow
 * EvalITA [Page](http://www.evalita.it/)
 * WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
 
-### Contacts
-**Loreto Parisi**: `loreto@musixmatch.com`, [loretoparisi](https://github.com/loretoparisi)</br>
-**Simone Francia**: `simone.francia@musixmatch.com`, [simonefrancia](https://github.com/simonefrancia)</br>
-**Paolo Magnani**: `paul.magnani95@gmail.com`, [paulthemagno](https://github.com/paulthemagno)
+### Authors
+
+**Loreto Parisi**: `loreto at musixmatch dot com`, [loretoparisi](https://github.com/loretoparisi)
+**Simone Francia**: `simone.francia at musixmatch dot com`, [simonefrancia](https://github.com/simonefrancia)
+**Paolo Magnani**: `paul.magnani95 at gmail dot com`, [paulthemagno](https://github.com/paulthemagno)
+
+### About Musixmatch AI
+We do Machine Learning and Artificial Intelligence @[musixmatch](https://twitter.com/Musixmatch)
+
+Follow us on [Twitter](https://twitter.com/musixmatchai) [Github](https://github.com/musixmatchresearch)
+
 
