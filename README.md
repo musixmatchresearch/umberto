@@ -128,7 +128,7 @@ These results refers to umberto-commoncrawl-cased model.
 | Dataset | F1 | Precision | Recall | Accuracy |
 | ------ | ------ | ------ |  ------ |  ----- |
 | **EvalITA-07** | **86.240** | 85.939 | 86.544 | 98.534 | 
-| **WikiNER-ITA** | **asap** | asap | asap | asap | 
+| **WikiNER-ITA** | **90.483** | 90.328 | 90.638 | 98.661 | 
 
 ### Umberto-Commoncrawl-Cased
 
