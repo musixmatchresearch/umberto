@@ -176,6 +176,7 @@ All of the original datasets are publicly available or were released with the ow
 **Paolo Magnani**: `paul.magnani95 at gmail dot com`, [paulthemagno](https://github.com/paulthemagno)<br>
 
 ## About Musixmatch AI
+![Musxmatch Ai mac app icon-128](https://user-images.githubusercontent.com/163333/72244273-396aa380-35ee-11ea-894b-4ea48230c02b.png)<br>
 We do Machine Learning and Artificial Intelligence @[musixmatch](https://twitter.com/Musixmatch)<br>
 Follow us on [Twitter](https://twitter.com/musixmatchai) [Github](https://github.com/musixmatchresearch)
 
