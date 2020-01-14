@@ -127,7 +127,7 @@ These results refers to umberto-commoncrawl-cased model.
 
 | Dataset | F1 | Precision | Recall | Accuracy |
 | ------ | ------ | ------ |  ------ |  ----- |
-| **EvalITA-07** | **86.240** | 85.939 | 86.544 | 98.534 | 
+| **ICAB-EvalITA07** | **86.240** | 85.939 | 86.544 | 98.534 | 
 | **WikiNER-ITA** | **90.483** | 90.328 | 90.638 | 98.661 | 
 
 ### Umberto-Commoncrawl-Cased
@@ -145,7 +145,7 @@ These results refers to umberto-commoncrawl-cased model.
 
 | Dataset | F1 | Precision | Recall | Accuracy |
 | ------ | ------ | ------ |  ------ |  ------ |
-| **EvalITA-07** | **87.565**  | 86.596  | 88.556  | 98.690 | 
+| **ICAB-EvalITA07** | **87.565**  | 86.596  | 88.556  | 98.690 | 
 | **WikiNER-ITA** | **92.531**  | 92.509 | 92.553 | 99.136 | 
 
 
@@ -166,7 +166,7 @@ All of the original datasets are publicly available or were released with the ow
 
 * UD Italian-ISDT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ISDT)
 * UD Italian-ParTUT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ParTUT)
-* EvalITA [Page](http://www.evalita.it/)
+* ICAB-EvalITA [Page](http://www.evalita.it/)
 * WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
 
 ## Authors
