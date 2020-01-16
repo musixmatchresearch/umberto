@@ -160,14 +160,32 @@ These results refers to umberto-commoncrawl-cased model.
 * Italy goes to Stanford: a collection of CoreNLP modules for Italian (TINT) [Paper](https://arxiv.org/abs/1609.06204), [Github](https://github.com/dhfbk/tint), [Page](https://dh.fbk.eu/technologies/tint-italian-nlp-tool) 
 
 
-## Datasets
-
+## Citation
 All of the original datasets are publicly available or were released with the owners' grant. The datasets are all released under a CC0 or CCBY license.
 
 * UD Italian-ISDT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ISDT)
 * UD Italian-ParTUT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ParTUT)
-* ICAB-EvalITA [Page](http://www.evalita.it/)
+* I-CAB (Italian Content Annotation Bank), EvalITA [Page](http://www.evalita.it/)
+
+```
+@inproceedings {magnini2006annotazione,
+	title = {Annotazione di contenuti concettuali in un corpus italiano: I - CAB},
+	author = {Magnini,Bernardo and Cappelli,Amedeo and Pianta,Emanuele and Speranza,Manuela and Bartalesi Lenzi,V and Sprugnoli,Rachele and Romano,Lorenza and Girardi,Christian and Negri,Matteo},
+	booktitle = {Proc.of SILFI 2006},
+	year = {2006}
+}
+@inproceedings {magnini2006cab,
+	title = {I - CAB: the Italian Content Annotation Bank.},
+	author = {Magnini,Bernardo and Pianta,Emanuele and Girardi,Christian and Negri,Matteo and Romano,Lorenza and Speranza,Manuela and Lenzi,Valentina Bartalesi and Sprugnoli,Rachele},
+	booktitle = {LREC},
+	pages = {963--968},
+	year = {2006},
+	organization = {Citeseer}
+}
+```
+
 * WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
+
 
 ## Authors
 
