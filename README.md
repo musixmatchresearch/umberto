@@ -68,7 +68,7 @@ pip install .
 
 From official [HuggingFace](https://github.com/huggingface/transformers) code:
 
-```
+```python
 from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
 umberto = AutoModel.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
