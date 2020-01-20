@@ -39,13 +39,13 @@ transformers
 fairseq
 ```
 
-##### IMPORTANT: Umberto is not actually supported in transformers and fairseq, but it will be soon. Please install the two libraries considering the steps below and use forked libraries from musixmatch-research.
-
 
 #### Transformers
 
-Soon `transformers` will support UmBERTo, so you will be able to install the package with `pip`
-At the moment if you want to use a version of `transformers` library with UmBERTo support, build from source doing these steps:
+
+```pip install transformers```
+
+If you want libraries with specific class `UmbertoModel`, `UmbertoTokenizer`, please build from source doing these steps:
 ```bash
 git clone https://github.com/musixmatchresearch/transformers
 cd transformers
@@ -61,11 +61,26 @@ cd fairseq
 pip install .
 ```
 
+
 # Examples
 
-`UmbertoModel`, `UmbertoTokenizer` classes are supported only if you install transformers from source from musixmatch-research   https://github.com/musixmatchresearch/transformers. Soon it will be merged
-
 #### Transformers
+
+From official [HuggingFace](https://github.com/huggingface/transformers) code:
+
+```
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
+umberto = AutoModel.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
+
+encoded_input = tokenizer.encode("Umberto Eco è stato un grande scrittore")
+input_ids = torch.tensor(encoded_input).unsqueeze(0)  # Batch size 1
+outputs = umberto(input_ids)
+last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output
+```
+
+Otherwise, if you want to use specific class `UmbertoModel`, `UmbertoTokenizer` please install transformers from source from musixmatch-research https://github.com/musixmatchresearch/transformers.
+
 ```python
 import torch
 from transformers import UmbertoTokenizer, UmbertoModel
@@ -82,6 +97,8 @@ input_ids = torch.tensor(encoded_input).unsqueeze(0)  # Batch size 1
 outputs = umberto(input_ids)
 last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output
 ```
+
+
 
 #### Fairseq
 `UmbertoModel` class is supported only if you install fairseq from source from musixmatch-research https://github.com/musixmatchresearch/fairseq. Soon it will be merged
