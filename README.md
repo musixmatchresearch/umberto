@@ -5,7 +5,7 @@
 
 # UmBERTo: an Italian Language Model trained with Whole Word Masking
 
-UmBERTo is an Roberta-based Language Model trained on large Italian Corpora.
+UmBERTo is a Roberta-based Language Model trained on large Italian Corpora.
 This implementation is based on Facebook Research AI code (https://github.com/pytorch/fairseq)
 
 # Description
