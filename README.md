@@ -35,6 +35,7 @@ We trained both the models on 8 Nvidia V100 GPUs (p2.8xlarge P2 EC2 instance) du
 ### Dependencies:
 ```
 torch >= 1.3.1
+sentencepiece
 transformers
 fairseq
 ```
