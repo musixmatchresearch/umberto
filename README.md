@@ -102,15 +102,8 @@ last_hidden_states = outputs[0]  # The last hidden-state is the first element of
 
 
 #### Fairseq
-`UmbertoModel` class is supported only if you install fairseq from source from musixmatch-research https://github.com/musixmatchresearch/fairseq. Soon it will be merged
-```python
 import torch
-
-from fairseq.models.roberta import UmbertoModel 
-# UMBERTO MODEL is supported if you install fairseq from source from https://github.com/musixmatchresearch/fairseq
-
-# load Umberto Model
-umberto = UmbertoModel.from_pretrained('umberto.commoncrawl.cased')
+umberto = torch.hub.load('musixmatchresearch/umberto', 'umberto_commoncrawl_cased')
 assert isinstance(umberto.model, torch.nn.Module)
 umberto.eval()  # disable dropout (or leave in train mode to finetune)
 
