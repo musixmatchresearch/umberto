@@ -108,6 +108,7 @@ last_hidden_states = outputs[0]  # The last hidden-state is the first element of
 import torch
 
 umberto = torch.hub.load('musixmatchresearch/umberto', 'umberto_commoncrawl_cased')
+
 assert isinstance(umberto.model, torch.nn.Module)
 umberto.eval()  # disable dropout (or leave in train mode to finetune)
 
