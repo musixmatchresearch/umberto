@@ -16,3 +16,17 @@ def umberto_commoncrawl_cased(**kwargs):
         **kwargs,
     )
     return RobertaHubInterface(x['args'], x['task'], x['models'][0])
+
+
+def umberto_wikipedia_uncased(**kwargs):
+    from fairseq import hub_utils
+    from fairseq.models.roberta.hub_interface import RobertaHubInterface
+    x = hub_utils.from_pretrained(
+        model_name_or_path='https://mxmdownloads.s3.amazonaws.com/umberto/umberto.wikipedia.uncased.tar.gz',
+        checkpoint_file='model.pt',
+        data_name_or_path='.',
+        bpe='sentencepiece',
+        load_checkpoint_heads=True,
+        **kwargs,
+    )
+    return RobertaHubInterface(x['args'], x['task'], x['models'][0])
