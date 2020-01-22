@@ -71,6 +71,7 @@ From official [HuggingFace](https://github.com/huggingface/transformers) code:
 
 ```python
 from transformers import AutoTokenizer, AutoModel
+
 tokenizer = AutoTokenizer.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
 umberto = AutoModel.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
 
@@ -105,6 +106,7 @@ last_hidden_states = outputs[0]  # The last hidden-state is the first element of
 
 ```python
 import torch
+
 umberto = torch.hub.load('musixmatchresearch/umberto', 'umberto_commoncrawl_cased')
 assert isinstance(umberto.model, torch.nn.Module)
 umberto.eval()  # disable dropout (or leave in train mode to finetune)
