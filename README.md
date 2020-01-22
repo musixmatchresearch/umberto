@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="umberto.jpg?raw=true" width="700"> </br>
+    <img src="https://user-images.githubusercontent.com/7140210/72913702-d55a8480-3d3d-11ea-99fc-f2ef29af4e72.jpg" width="700"> </br>
     Marco Lodola, Monument to Umberto Eco, Alessandria 2019
 </p>
 
