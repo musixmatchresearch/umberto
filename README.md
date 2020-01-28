@@ -130,7 +130,7 @@ We obtained state-of-the-art results for POS tagging, confirming that cased mode
 Our model `Umberto-Wikipedia-Uncased` trained with WWM on a smaller dataset and uncased, produces important results comparable to the cased results.
 
 ### Umberto-Wikipedia-Uncased
-These results refers to umberto-commoncrawl-cased model.
+These results refers to umberto-wikipedia-uncased model.
 
 #### Part of Speech (POS)
 
