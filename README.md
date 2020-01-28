@@ -70,6 +70,7 @@ pip install .
 From official [HuggingFace](https://github.com/huggingface/transformers) code:
 
 ```python
+import torch
 from transformers import AutoTokenizer, AutoModel
 
 tokenizer = AutoTokenizer.from_pretrained("Musixmatch/umberto-commoncrawl-cased-v1")
