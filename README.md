@@ -65,10 +65,32 @@ pip install .
 
 # Examples
 
-#### Transformers
+### Transformers
 
-From official [HuggingFace](https://github.com/huggingface/transformers) code:
+From official [HuggingFace](https://github.com/huggingface/transformers) code.
 
+#### with transformer pipeline
+
+```python
+
+from transformers import pipeline
+
+fill_mask = pipeline(
+	"fill-mask",
+	model="Musixmatch/umberto-commoncrawl-cased-v1",
+	tokenizer="Musixmatch/umberto-commoncrawl-cased-v1"
+)
+
+result = fill_mask("Umberto Eco è <mask> un grande scrittore")
+
+#[{'sequence': '<s> Umberto Eco è considerato un grande scrittore</s>', 'score': 0.1859988570213318, 'token': 5032}, 
+#{'sequence': '<s> Umberto Eco è stato un grande scrittore</s>', 'score': 0.1781671643257141, 'token': 471}, 
+#{'sequence': '<s> Umberto Eco è sicuramente un grande scrittore</s>', 'score': 0.16565577685832977, 'token': 2654}, 
+#{'sequence': '<s> UmbertoEco è indubbiamente un grande scrittore</s>', 'score': 0.09328985959291458, 'token': 17908}, 
+#{'sequence': '<s> Umberto Eco è certamente un grande scrittore</s>', 'score': 0.05470150709152222, 'token': 5269}]
+```
+
+#### with transformer AutoTokenizer,AutoModel  
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModel
@@ -82,7 +104,7 @@ outputs = umberto(input_ids)
 last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output
 ```
 
-#### Fairseq
+### Fairseq
 
 ```python
 import torch
@@ -105,7 +127,7 @@ result = umberto.fill_mask(masked_line, topk=20)
 
 
 
-### Results
+# Results
 We obtained state-of-the-art results for POS tagging, confirming that cased models trained with WWM perform better than uncased ones.
 Our model `Umberto-Wikipedia-Uncased` trained with WWM on a smaller dataset and uncased, produces important results comparable to the cased results.
 
