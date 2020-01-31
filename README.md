@@ -46,9 +46,9 @@ fairseq
 
 ```pip install transformers```
 
-If you want libraries with specific class `UmbertoModel`, `UmbertoTokenizer`, please build from source doing these steps:
+To install transformers from original repo (TESTED):
 ```bash
-git clone https://github.com/musixmatchresearch/transformers
+git clone https://github.com/huggingface/transformers.git
 cd transformers
 pip install .
 ```
