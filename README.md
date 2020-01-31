@@ -202,6 +202,8 @@ All of the original datasets are publicly available or were released with the ow
 }
 ```
 
+## Acknowledgments
+Special thanks to I-CAB (Italian Content Annotation Bank) and [EvalITA](http://www.evalita.it/) authors to provide the datasets as part of Master Thesis Research project with School of Engineering, University of Bologna.
 
 ## Authors
 
