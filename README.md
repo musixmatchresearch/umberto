@@ -82,27 +82,6 @@ outputs = umberto(input_ids)
 last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output
 ```
 
-Otherwise, if you want to use specific class `UmbertoModel`, `UmbertoTokenizer` please install transformers from source from musixmatch-research https://github.com/musixmatchresearch/transformers.
-
-```python
-import torch
-from transformers import UmbertoTokenizer, UmbertoModel
-
-
-# load Umberto Tokenizer, use do_lower_case=True if you'are using umberto-wikipedia-uncased
-tokenizer = UmbertoTokenizer.from_pretrained('umberto-commoncrawl-cased-v1', do_lower_case=False)
-
-# load Umberto Model
-umberto = UmbertoModel.from_pretrained('umberto-commoncrawl-cased-v1')
-
-encoded_input = tokenizer.encode("Umberto Eco è stato un grande scrittore")
-input_ids = torch.tensor(encoded_input).unsqueeze(0)  # Batch size 1
-outputs = umberto(input_ids)
-last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output
-```
-
-
-
 #### Fairseq
 
 ```python
@@ -182,8 +161,8 @@ All of the original datasets are publicly available or were released with the ow
 
 * UD Italian-ISDT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ISDT)
 * UD Italian-ParTUT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ParTUT)
+* WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
 * I-CAB (Italian Content Annotation Bank), EvalITA [Page](http://www.evalita.it/)
-
 ```
 @inproceedings {magnini2006annotazione,
 	title = {Annotazione di contenuti concettuali in un corpus italiano: I - CAB},
@@ -200,8 +179,6 @@ All of the original datasets are publicly available or were released with the ow
 	organization = {Citeseer}
 }
 ```
-
-* WIKINER [Page](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500) , [Paper](https://www.sciencedirect.com/science/article/pii/S0004370212000276?via%3Dihub)
 
 
 ## Authors
