@@ -18,7 +18,7 @@ Whole Word Masking (**WWM**) applies mask to an entire word, if at least one of 
 Two models are released:
   - **umberto-wikipedia-uncased-v1**, an uncased model trained on a relative small corpus (~7GB) extracted from 
   [Wikipedia-ITA](https://linguatools.org/tools/corpora/wikipedia-monolingual-corpora/).
-  - **umberto-commoncrawl-cased-v1**, a cased model trained on Commoncrawl ITA exploiting [OSCAR](https://traces1.inria.fr/oscar/) (Open Super-large Crawled ALMAnaCH coRpus) Italian large corpus ( ~71GB)
+  - **umberto-commoncrawl-cased-v1**, a cased model trained on Commoncrawl ITA exploiting [OSCAR](https://traces1.inria.fr/oscar/) (Open Super-large Crawled ALMAnaCH coRpus) Italian large corpus ( ~69GB)
 
 Both models have 12-layer, 768-hidden, 12-heads, 110M parameters (BASE).
 
