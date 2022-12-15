@@ -178,7 +178,7 @@ These results refers to umberto-commoncrawl-cased model.
 * Italy goes to Stanford: a collection of CoreNLP modules for Italian (TINT) [Paper](https://arxiv.org/abs/1609.06204), [Github](https://github.com/dhfbk/tint), [Page](https://dh.fbk.eu/technologies/tint-italian-nlp-tool) 
 
 
-## Citation
+## Credits
 All of the original datasets are publicly available or were released with the owners' grant. The datasets are all released under a CC0 or CCBY license.
 
 * UD Italian-ISDT Dataset [Github](https://github.com/UniversalDependencies/UD_Italian-ISDT)
@@ -210,6 +210,20 @@ Special thanks to I-CAB (Italian Content Annotation Bank) and [EvalITA](http://w
 **Loreto Parisi**: `loreto at musixmatch dot com`, [loretoparisi](https://github.com/loretoparisi)<br>
 **Simone Francia**: `simone.francia at musixmatch dot com`, [simonefrancia](https://github.com/simonefrancia)<br>
 **Paolo Magnani**: `paul.magnani95 at gmail dot com`, [paulthemagno](https://github.com/paulthemagno)<br>
+
+## Citation
+
+Cite this work with:
+```bibtex
+@misc{musixmatch-2020-umberto,
+  author = {Loreto Parisi and Simone Francia and Paolo Magnani},
+  title = {UmBERTo: an Italian Language Model trained with Whole Word Masking},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/musixmatchresearch/umberto}}
+}
+```
 
 ## About Musixmatch AI
 ![Musxmatch Ai mac app icon-128](https://user-images.githubusercontent.com/163333/72244273-396aa380-35ee-11ea-894b-4ea48230c02b.png)<br>
