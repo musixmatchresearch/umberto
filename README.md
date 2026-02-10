@@ -23,10 +23,10 @@ Two models are released:
 Both models have 12-layer, 768-hidden, 12-heads, 110M parameters (BASE).
 
 
-| Model | WWM | CASED | TOKENIZER | VOCAB SIZE  | TRAIN STEPS | FAIRSEQ  | TRANSFORMERS |
-| ------ | ------ | ------ | ------ | ------ |------ | ------ | --- |
-| `umberto-wikipedia-uncased-v1` | YES  | NO | SPM | 32K | 100k | [Link](http://bit.ly/2s7JmXh)| [Link](http://bit.ly/35wbSj6) |
-| `umberto-commoncrawl-cased-v1` | YES | YES | SPM | 32K | 125k | [Link](http://bit.ly/2TakHfJ)| [Link](http://bit.ly/35zO7GH) |
+| Model | WWM | CASED | TOKENIZER | VOCAB SIZE  | TRAIN STEPS | FAIRSEQ  | HUGGINGFACE | WEIGHTS
+| ------ | ------ | ------ | ------ | ------ |------ | ------ | --- | --- |
+| `umberto-wikipedia-uncased-v1` | YES  | NO | SPM | 32K | 100k | [Link](http://bit.ly/2s7JmXh)| [Link](https://huggingface.co/Musixmatch/umberto-wikipedia-uncased-v1) | [Link](http://bit.ly/35wbSj6)
+| `umberto-commoncrawl-cased-v1` | YES | YES | SPM | 32K | 125k | [Link](http://bit.ly/2TakHfJ)| [Link](https://huggingface.co/Musixmatch/umberto-commoncrawl-cased-v1) | [Link](http://bit.ly/35zO7GH)
 
 We trained both the models on 8 Nvidia V100 GPUs (p2.8xlarge P2 EC2 instance) during 4 days on [AWS Sagemaker](https://aws.amazon.com/it/sagemaker/).
 
